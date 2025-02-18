@@ -16,7 +16,7 @@ substitutions:
   voice_assist_error_phase_id: '11'
   # Change this to true in case you ahve a hidden SSID at home.
   hidden_ssid: "false"
-  ds9intercom_url: "https://github.com/lununez/home-assistant-voice-pe/raw/dev/sounds/ds9intercom.mp3"
+  ds9intercom_url: "https://www.trekcore.com/audio/computer/ds9intercom.mp3"
   
 external_components:
   - source:
