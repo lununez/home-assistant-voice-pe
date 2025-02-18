@@ -35,8 +35,6 @@ external_components:
       - voice_kit
     refresh: always
 
-packages:
-  Nabu Casa.Home Assistant Voice PE: github://lununez/home-assistant-voice-pe/home-assistant-voice.yaml  
 esphome:
   name: home-assistant-voice
   friendly_name: Home Assistant Voice
