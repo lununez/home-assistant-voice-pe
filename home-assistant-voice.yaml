@@ -16,7 +16,16 @@ substitutions:
   voice_assist_error_phase_id: '11'
   # Change this to true in case you ahve a hidden SSID at home.
   hidden_ssid: "false"
-
+  
+external_components:
+  - source:
+      type: git
+      url: https://github.com/lununez/home-assistant-voice-pe
+      ref: dev
+    components:
+      - all
+    refresh: always
+    
 esphome:
   name: home-assistant-voice
   friendly_name: Home Assistant Voice
