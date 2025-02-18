@@ -15,8 +15,27 @@ substitutions:
   # The voice assistant encountered an error
   voice_assist_error_phase_id: '11'
   # Change this to true in case you ahve a hidden SSID at home.
-  hidden_ssid: "false"
+  hidden_ssid: "false"  
   
+external_components:
+  - source:
+      type: git
+      url: https://github.com/lununez/home-assistant-voice-pe
+      ref: dev
+    components:
+      - aic3204
+      - audio_dac
+      - media_player
+      - micro_wake_word
+      - microphone
+      - nabu
+      - nabu_microphone
+      - voice_assistant
+      - voice_kit
+    refresh: always
+
+packages:
+  Nabu Casa.Home Assistant Voice PE: github://lununez/home-assistant-voice-pe/home-assistant-voice.yaml  
 esphome:
   name: home-assistant-voice
   friendly_name: Home Assistant Voice
