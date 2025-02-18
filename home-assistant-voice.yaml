@@ -15,7 +15,8 @@ substitutions:
   # The voice assistant encountered an error
   voice_assist_error_phase_id: '11'
   # Change this to true in case you ahve a hidden SSID at home.
-  hidden_ssid: "false"  
+  hidden_ssid: "false"
+  ds9intercom_url: "https://github.com/lununez/home-assistant-voice-pe/raw/dev/sounds/ds9intercom.mp3"
   
 external_components:
   - source:
@@ -1508,7 +1509,7 @@ media_player:
       - id: timer_finished_sound
         file: https://github.com/lununez/home-assistant-voice-pe/raw/dev/sounds/timer_finished.flac
       - id: wake_word_triggered_sound
-        file: https://github.com/lununez/home-assistant-voice-pe/raw/dev/sounds/ds9intercom.mp3
+        file: ${ds9intercom_url}
       - id: easter_egg_tick_sound
         file: https://github.com/lununez/home-assistant-voice-pe/raw/dev/sounds/easter_egg_tick.mp3
       - id: easter_egg_tada_sound
